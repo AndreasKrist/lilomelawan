@@ -12,7 +12,7 @@ export default function Article({ article, content }) {
   return (
     <>
       <Head>
-        <title>{article.title} | Minimalist Blog</title>
+        <title>{article.title} | LiloMelawan</title>
         <meta name="description" content={article.excerpt} />
         <meta property="og:title" content={`${article.title} | Minimalist Blog`} />
         <meta property="og:description" content={article.excerpt} />

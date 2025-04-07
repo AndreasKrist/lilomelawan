@@ -31,8 +31,8 @@ export default function Donate() {
         
         <div className="prose dark:prose-dark lg:prose-lg max-w-none">
           <p className="text-xl">
-            Jika Anda menemukan nilai dalam artikel dan konten yang kami buat, pertimbangkan untuk mendukung
-            situs ini. Kontribusi Anda membantu kami terus menciptakan konten berkualitas tinggi
+            Hi Partisan!! Jika kalian merasa artikel ini bermanfaat, ayo dukung situs ini. 
+            Kontribusi para Partisan membantu kami terus menciptakan konten berkualitas
             dan menjaga situs ini bebas dari iklan.
           </p>
           
@@ -51,7 +51,7 @@ export default function Donate() {
               </div>
               <h2 className="text-2xl font-bold mt-0">Donasi untuk LiloMelawan</h2>
               <p className="mb-6">
-                Donasi Anda akan digunakan untuk pengembangan konten, pemeliharaan situs, dan mendukung penulis kami.
+                Donasi Anda akan digunakan untuk pengembangan konten, pemeliharaan situs, dan mendukung penulisan dari rakyat untuk rakyat
               </p>
               <a
                 href="https://saweria.co/lilomelawan"
@@ -62,7 +62,7 @@ export default function Donate() {
                 Donasi Sekarang
               </a>
               <a
-                href="https://docs.google.com/spreadsheets/d/1ABCdef123456/edit?usp=sharing"
+                href="https://docs.google.com/spreadsheets/d/1rmOik-YNzAfxuGl5r4spPtqiDtgCp3lpRgDBzkB9hD8/edit?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 font-medium"
@@ -78,8 +78,6 @@ export default function Donate() {
           <h2>Cara Lain untuk Mendukung Kami</h2>
           <ul>
             <li>Bagikan artikel yang Anda anggap bermanfaat kepada orang lain</li>
-            <li>Berlangganan newsletter untuk mendapatkan update konten terbaru</li>
-            <li>Berpartisipasi dalam diskusi dengan meninggalkan komentar atau umpan balik</li>
             <li>Ikuti kami di media sosial dan bantu kembangkan komunitas kami</li>
             <li>Kirimkan artikel kontribusi untuk bagian Partisan</li>
           </ul>

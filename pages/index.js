@@ -64,7 +64,7 @@ export default function Home({ articles }) {
           transition={{ duration: 0.3 }}
           className="text-4xl md:text-5xl font-bold mb-12 font-serif text-gray-900 dark:text-white"
         >
-          Insightful Perspectives
+          Take a minute and imagine
         </MotionH1>
         
         <div className="mb-8">

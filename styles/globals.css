@@ -112,7 +112,7 @@
   
   /* Profile picture styling */
   .profile-picture {
-    @apply relative rounded-full overflow-hidden flex-shrink-0 border-4 border-red-500;
+    @apply relative rounded-full overflow-hidden flex-shrink-0 border-4 border-red-600;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   }
 }
