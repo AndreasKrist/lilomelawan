@@ -103,8 +103,8 @@ export default function PoliticalAlignmentTest() {
     {
       id: 'q16',
       text: "Militer harus didanai dan didukung dengan kuat.",
-      dimension: "security",
-      direction: "hawk"
+      dimension: "international",
+      direction: "nationalist"
     },
     {
       id: 'q17',
@@ -248,33 +248,17 @@ export default function PoliticalAlignmentTest() {
 
   // Calculate the political alignment based on answers
   const calculateResults = () => {
-    // Initialize scores for different dimensions
-    let economicScore = 0;
-    let socialScore = 0;
-    let environmentalScore = 0;
-    let internationalScore = 0;
-    let governanceScore = 0;
-
-    // Count questions in each dimension for averaging
-    let economicCount = 0;
-    let socialCount = 0;
-    let environmentalCount = 0;
-    let internationalCount = 0;
-    let governanceCount = 0;
-
-    // Calculate scores for each dimension
+    let economicScore = 0, socialScore = 0, environmentalScore = 0, internationalScore = 0, governanceScore = 0;
+    let economicCount = 0, socialCount = 0, environmentalCount = 0, internationalCount = 0, governanceCount = 0;
+  
     questions.forEach(question => {
       const answer = answers[question.id] || 0;
-      
-      // Adjust the score based on the direction (multiply by -1 if direction is right/conservative/authoritarian)
       const adjustedScore = question.direction === "left" || 
-                           question.direction === "progressive" || 
-                           question.direction === "libertarian" || 
-                           question.direction === "green" ||
-                           question.direction === "globalist" ? 
-                           answer : -answer;
-
-      // Add to the appropriate dimension
+                            question.direction === "progressive" || 
+                            question.direction === "libertarian" || 
+                            question.direction === "green" ||
+                            question.direction === "globalist" ? answer : -answer;
+  
       if (question.dimension === "economic") {
         economicScore += adjustedScore;
         economicCount++;
@@ -292,31 +276,28 @@ export default function PoliticalAlignmentTest() {
         governanceCount++;
       }
     });
-
-    // Normalize scores to a -10 to 10 scale
+  
     economicScore = economicCount > 0 ? (economicScore / economicCount) * 5 : 0;
     socialScore = socialCount > 0 ? (socialScore / socialCount) * 5 : 0;
     environmentalScore = environmentalCount > 0 ? (environmentalScore / environmentalCount) * 5 : 0;
     internationalScore = internationalCount > 0 ? (internationalScore / internationalCount) * 5 : 0;
     governanceScore = governanceCount > 0 ? (governanceScore / governanceCount) * 5 : 0;
-
-    // Determine political alignment based on scores
-    let alignment = "centrist"; // Default
-
-    if (economicScore > 3 && socialScore > 3) {
-      alignment = "progressive-left";
-    } else if (economicScore > 3 && socialScore > 0) {
+  
+    let alignment = "centrist";
+    if (economicScore > 2.5 && socialScore > 2.5) {
+      alignment = governanceScore < -2.5 ? "progressive-left" : "progressive-left"; // Could add authoritarian variant if defined
+    } else if (economicScore > 2.5 && socialScore >= -2.5 && socialScore <= 2.5) {
       alignment = "social-democrat";
-    } else if (economicScore < -3 && socialScore < -3) {
-      alignment = "conservative";
-    } else if (economicScore < -3 && socialScore > 3) {
+    } else if (economicScore < -2.5 && socialScore < -2.5) {
+      alignment = governanceScore > 2.5 ? "conservative" : "nationalist"; // Governance adjusts here
+    } else if (economicScore < -2.5 && socialScore > 2.5) {
       alignment = "libertarian";
-    } else if (internationalScore < -3) {
+    } else if (internationalScore < -2.5 && environmentalScore <= 2.5) {
       alignment = "nationalist";
-    } else if (environmentalScore > 5) {
+    } else if (environmentalScore > 3.5) {
       alignment = "green";
     }
-
+  
     setResults({
       alignment,
       scores: {
