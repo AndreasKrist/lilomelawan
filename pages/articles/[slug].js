@@ -14,14 +14,15 @@ export default function Article({ article, content }) {
       <Head>
         <title>{article.title} | LiloMelawan</title>
         <meta name="description" content={article.excerpt} />
-        <meta property="og:title" content={`${article.title} | Minimalist Blog`} />
+        <meta property="og:title" content={`${article.title} | LiloMelawan`} />
         <meta property="og:description" content={article.excerpt} />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content={`https://your-domain.com/articles/${article.slug}`} />
+        <meta property="og:url" content={`https://lilomelawan.com/articles/${article.slug}`} />
         {article.coverImage && <meta property="og:image" content={article.coverImage} />}
       </Head>
 
-      <article className="container-narrow py-10 md:py-16">
+      {/* Changed from container-narrow to article-container for more whitespace */}
+      <article className="article-container py-10 md:py-16">
         <ArticleHeader
           title={article.title}
           date={article.date}

@@ -7,10 +7,17 @@ export default function ArticleCard({ article }) {
     return null;
   }
 
+  // Function to truncate excerpt text to keep cards more square
+  const truncateExcerpt = (text, maxLength = 100) => {
+    if (!text || text.length <= maxLength) return text;
+    const truncated = text.substring(0, maxLength).trim();
+    return `${truncated}...`;
+  };
+
   return (
     <article className="modern-card h-full flex flex-col">
       {article.coverImage && (
-        <div className="w-full h-56 relative overflow-hidden rounded-t-xl">
+        <div className="w-full h-48 relative overflow-hidden rounded-t-xl">
           <Link href={`/articles/${article.slug}`} className="block w-full h-full">
             <Image
               src={article.coverImage}
@@ -23,11 +30,11 @@ export default function ArticleCard({ article }) {
         </div>
       )}
       
-      <div className="p-6 flex-1 flex flex-col">
+      <div className="p-4 flex-1 flex flex-col">
         {article.categories && article.categories.length > 0 && (
-          <div className="mb-3 flex flex-wrap gap-2">
+          <div className="mb-2 flex flex-wrap gap-1">
             {article.categories.map(category => (
-              <span key={category} className="text-xs font-medium px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 rounded-full">
+              <span key={category} className="text-xs font-medium px-2 py-0.5 bg-red-50 dark:bg-red-900/20 text-red-600 dark:text-red-400 rounded-full">
                 {category}
               </span>
             ))}
@@ -35,29 +42,29 @@ export default function ArticleCard({ article }) {
         )}
         
         <Link href={`/articles/${article.slug}`} className="block group">
-          <h2 className="text-xl font-bold font-serif mb-2 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
+          <h2 className="text-lg font-bold font-serif mb-1 line-clamp-2 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
             {article.title}
           </h2>
         </Link>
         
-        <div className="flex items-center text-sm text-gray-500 dark:text-gray-400 mb-3 space-x-3">
+        <div className="flex items-center text-xs text-gray-500 dark:text-gray-400 mb-2 space-x-2">
           <span>{formatDate(article.date)}</span>
           
           {article.readingTime && (
             <>
               <span className="inline-block w-1 h-1 bg-gray-500 dark:bg-gray-400 rounded-full"></span>
-              <span>{article.readingTime} min read</span>
+              <span>{article.readingTime} min</span>
             </>
           )}
         </div>
         
-        <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">
-          {article.excerpt}
+        <p className="text-gray-600 dark:text-gray-300 text-sm mb-3 line-clamp-2">
+          {truncateExcerpt(article.excerpt)}
         </p>
         
         <Link 
           href={`/articles/${article.slug}`} 
-          className="inline-flex items-center text-red-600 dark:text-red-400 font-medium transition hover:text-red-700 dark:hover:text-red-300 mt-auto"
+          className="inline-flex items-center text-red-600 dark:text-red-400 text-sm font-medium transition hover:text-red-700 dark:hover:text-red-300 mt-auto"
         >
           Read More
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">

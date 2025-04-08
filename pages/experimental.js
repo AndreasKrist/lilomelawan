@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignmentTest';
 import ThoughtExperiments from '../components/experimental/ThoughtExperiments';
+import IndonesiaEconomicDashboard from '../components/dashboard/IndonesiaEconomicDashboard';
 
 // Import components directly
 let MotionMain, MotionH1, MotionDiv;
@@ -50,7 +51,7 @@ export default function Experimental() {
         
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
           Selamat datang di bagian fitur eksperimental kami. Di sini Anda akan menemukan alat interaktif yang melampaui artikel tradisional.
-          Fitur-fitur ini membantu Anda mengeksplorasi orientasi politik Anda dan terlibat dengan eksperimen pemikiran filosofis.
+          Fitur-fitur ini membantu Anda mengeksplorasi orientasi politik, eksperimen pemikiran filosofis, dan tren ekonomi Indonesia.
         </p>
         
         {/* Tab Navigation */}
@@ -75,6 +76,16 @@ export default function Experimental() {
           >
             Eksperimen Pemikiran
           </button>
+          <button
+            onClick={() => setActiveTab('economic-dashboard')}
+            className={`px-4 py-2 font-medium rounded-t-lg transition ${
+              activeTab === 'economic-dashboard' 
+                ? 'bg-red-600 text-white' 
+                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+            }`}
+          >
+            Dashboard Ekonomi
+          </button>
         </div>
         
         {/* Tab Content */}
@@ -86,6 +97,7 @@ export default function Experimental() {
         >
           {activeTab === 'political-test' && <PoliticalAlignmentTest />}
           {activeTab === 'thought-experiment' && <ThoughtExperiments />}
+          {activeTab === 'economic-dashboard' && <IndonesiaEconomicDashboard />}
         </MotionDiv>
       </MotionMain>
     </>
