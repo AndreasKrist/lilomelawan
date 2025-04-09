@@ -1,8 +1,9 @@
 import Head from 'next/head';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ArticleCard from '../components/article/ArticleCard';
 import SearchBar from '../components/ui/SearchBar';
 import { getAllArticles } from '../lib/utils/mdx';
+
 
 // Import components directly
 let MotionDiv, MotionMain, MotionH1;
@@ -23,6 +24,37 @@ try {
 export default function Home({ articles }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [activeCategory, setActiveCategory] = useState('All');
+
+useEffect(() => {
+  const slider = document.querySelector('.category-slider');
+  if (slider) {
+    const updateScrollIndicator = () => {
+      // Calculate what percentage of total scroll distance we've moved
+      const scrollableWidth = slider.scrollWidth - slider.clientWidth;
+      const scrollPercentage = slider.scrollLeft / scrollableWidth;
+      
+      // Calculate how far right the indicator should move
+      // The indicator should move from 0 to (container width - indicator width)
+      const indicatorWidth = (slider.clientWidth / slider.scrollWidth) * 100;
+      const maxTravel = slider.clientWidth - (slider.clientWidth * (indicatorWidth/ 1000));
+      const position = scrollPercentage * maxTravel;
+      
+      // Set the CSS variables
+      slider.style.setProperty('--scroll-width', `${indicatorWidth}%`);
+      slider.style.setProperty('--scroll-position', `${position}px`);
+    };
+    
+    slider.addEventListener('scroll', updateScrollIndicator);
+    // Run immediately and after a brief delay to ensure proper initialization
+    updateScrollIndicator();
+    window.addEventListener('resize', updateScrollIndicator);
+    
+    return () => {
+      slider.removeEventListener('scroll', updateScrollIndicator);
+      window.removeEventListener('resize', updateScrollIndicator);
+    };
+  }
+}, []);
   
   const categories = ['All', 'Philosophy', 'Book', 'Science & Technology', 'Opinion', 'Partisan', 'Politics', 'History', 'Economy'];
   
@@ -82,7 +114,7 @@ export default function Home({ articles }) {
               >
                 {category}
               </button>
-            ))}
+            ))} 
           </div>
         </div>
         
@@ -133,3 +165,4 @@ export async function getStaticProps() {
     props: { articles },
   };
 }
+

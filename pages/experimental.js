@@ -58,7 +58,7 @@ export default function Experimental() {
         <div className="flex flex-wrap gap-2 mb-8 border-b border-gray-200 dark:border-gray-700">
           <button
             onClick={() => setActiveTab('political-test')}
-            className={`px-4 py-2 font-medium rounded-t-lg transition ${
+            className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
               activeTab === 'political-test' 
                 ? 'bg-red-600 text-white' 
                 : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
@@ -68,7 +68,7 @@ export default function Experimental() {
           </button>
           <button
             onClick={() => setActiveTab('thought-experiment')}
-            className={`px-4 py-2 font-medium rounded-t-lg transition ${
+            className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
               activeTab === 'thought-experiment' 
                 ? 'bg-red-600 text-white' 
                 : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
@@ -78,7 +78,7 @@ export default function Experimental() {
           </button>
           <button
             onClick={() => setActiveTab('economic-dashboard')}
-            className={`px-4 py-2 font-medium rounded-t-lg transition ${
+            className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
               activeTab === 'economic-dashboard' 
                 ? 'bg-red-600 text-white' 
                 : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'

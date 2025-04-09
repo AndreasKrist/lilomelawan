@@ -31,10 +31,14 @@
     @apply max-w-6xl mx-auto px-4 sm:px-8;
   }
   
+  .article-container {
+    @apply max-w-5xl mx-auto px-4 sm:px-8 md:px-10;
+  }
+  
   .article-grid {
     @apply space-y-10 md:space-y-12;
   }
-  
+
   /* Modern Card */
   .modern-card {
     @apply bg-white dark:bg-gray-800 shadow rounded-xl;
@@ -114,5 +118,41 @@
   .profile-picture {
     @apply relative rounded-full overflow-hidden flex-shrink-0 border-4 border-red-600;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+}
+
+@media (max-width: 768px) {
+  /* Container for scroll indicator */
+  .category-slider {
+    position: relative;
+    padding-bottom: 12px; /* Make room for the indicator */
+  }
+  
+  /* Thin gray line across full width */
+  .category-slider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    height: 2px;
+    background-color: rgba(100, 100, 100, 0.1);
+    border-radius: 1px;
+  }
+  
+  /* Red indicator line that represents the visible portion */
+  .category-slider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    /* Width will be set by JS to match visible portion accurately */
+    width: var(--scroll-width, 30%);
+    bottom: 4px;
+    height: 2px;
+    background-color: rgb(220, 38, 38); /* Red color */
+    border-radius: 12px;
+    /* Movement calculation improved */
+    transform: translateX(var(--scroll-position, 0px));
+    transition: transform 0.2s;
   }
 }

@@ -103,8 +103,8 @@ function NavLink({ href, children, exact = false }) {
       href={href}
       className={`px-3 py-2 text-sm font-medium rounded-md transition ${
         isActive 
-          ? 'text-blue-600 dark:text-blue-400' 
-          : 'text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
+          ? 'text-red-600 dark:text-red-400' 
+          : 'text-gray-700 dark:text-gray-300 hover:text-red-600 dark:hover:text-red-400'
       }`}
     >
       {children}
@@ -123,8 +123,8 @@ function MobileNavLink({ href, children, exact = false }) {
       href={href}
       className={`px-3 py-3 text-base font-medium block rounded-md transition ${
         isActive 
-          ? 'text-blue-600 dark:text-blue-400 bg-gray-100 dark:bg-gray-800' 
-          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400'
+          ? 'text-red-600 dark:text-red-400 bg-gray-100 dark:bg-gray-800' 
+          : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-red-600 dark:hover:text-red-400'
       }`}
     >
       {children}

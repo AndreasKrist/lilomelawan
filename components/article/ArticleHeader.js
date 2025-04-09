@@ -20,7 +20,7 @@ export default function ArticleHeader({ title, date, readingTime, coverImage }) 
       </div>
       
       {coverImage && (
-        <div className="relative w-full h-72 sm:h-96 md:h-[32rem] -mx-4 sm:mx-0 sm:rounded-lg overflow-hidden">
+        <div className="relative w-full h-72 sm:h-96 md:h-[32rem] mx-0 sm:rounded-lg rounded-md overflow-hidden">
           <Image
             src={coverImage}
             alt={`Cover image for ${title}`}
