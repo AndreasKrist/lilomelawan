@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
 import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignmentTest';
-import ThoughtExperiments from '../components/experimental/ThoughtExperiments';
 import IndonesiaEconomicDashboard from '../components/dashboard/IndonesiaEconomicDashboard';
 
 // Import components directly
@@ -21,7 +20,7 @@ try {
 }
 
 export default function Experimental() {
-  const [activeTab, setActiveTab] = useState('political-test');
+  const [activeTab, setActiveTab] = useState('economic-dashboard');
 
   return (
     <>
@@ -51,31 +50,11 @@ export default function Experimental() {
         
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
           Selamat datang di bagian fitur eksperimental kami. Di sini Anda akan menemukan alat interaktif yang melampaui artikel tradisional.
-          Fitur-fitur ini membantu Anda mengeksplorasi orientasi politik, eksperimen pemikiran filosofis, dan tren ekonomi Indonesia.
+          Jelajahi dashboard ekonomi untuk melihat tren terkini atau uji orientasi politik Anda.
         </p>
         
         {/* Tab Navigation */}
         <div className="flex flex-wrap gap-2 mb-8 border-b border-gray-200 dark:border-gray-700">
-          <button
-            onClick={() => setActiveTab('political-test')}
-            className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
-              activeTab === 'political-test' 
-                ? 'bg-red-600 text-white' 
-                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
-            }`}
-          >
-            Tes Orientasi Politik
-          </button>
-          <button
-            onClick={() => setActiveTab('thought-experiment')}
-            className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
-              activeTab === 'thought-experiment' 
-                ? 'bg-red-600 text-white' 
-                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
-            }`}
-          >
-            Eksperimen Pemikiran
-          </button>
           <button
             onClick={() => setActiveTab('economic-dashboard')}
             className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
@@ -86,6 +65,16 @@ export default function Experimental() {
           >
             Dashboard Ekonomi
           </button>
+          <button
+            onClick={() => setActiveTab('political-test')}
+            className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
+              activeTab === 'political-test' 
+                ? 'bg-red-600 text-white' 
+                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+            }`}
+          >
+            Tes Orientasi Politik
+          </button>
         </div>
         
         {/* Tab Content */}
@@ -95,9 +84,8 @@ export default function Experimental() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          {activeTab === 'political-test' && <PoliticalAlignmentTest />}
-          {activeTab === 'thought-experiment' && <ThoughtExperiments />}
           {activeTab === 'economic-dashboard' && <IndonesiaEconomicDashboard />}
+          {activeTab === 'political-test' && <PoliticalAlignmentTest />}
         </MotionDiv>
       </MotionMain>
     </>
