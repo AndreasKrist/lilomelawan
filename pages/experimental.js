@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignmentTest2';
+import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignmentTest';
 import IndonesiaEconomicDashboard from '../components/dashboard/IndonesiaEconomicDashboard';
 import CommonPlace from '../components/experimental/CommonPlace';
 
