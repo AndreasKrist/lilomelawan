@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignmentTest';
+import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignmentTestNew';
 import IndonesiaEconomicDashboard from '../components/dashboard/IndonesiaEconomicDashboard';
+import CommonPlace from '../components/experimental/CommonPlace';
 
 // Import components directly
 let MotionMain, MotionH1, MotionDiv;
@@ -20,17 +21,18 @@ try {
 }
 
 export default function Experimental() {
-  const [activeTab, setActiveTab] = useState('economic-dashboard');
+  // Changed default tab to common-place
+  const [activeTab, setActiveTab] = useState('common-place');
 
   return (
     <>
       <Head>
-        <title>Eksperimental | LiloMelawan</title>
+        <title>Eksperimental | LiloPikir</title>
         <meta name="description" content="Jelajahi fitur interaktif eksperimental" />
-        <meta property="og:title" content="Eksperimental | LiloMelawan" />
+        <meta property="og:title" content="Eksperimental | LiloPikir" />
         <meta property="og:description" content="Jelajahi fitur interaktif eksperimental" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lilomelawan.com/experimental" />
+        <meta property="og:url" content="https://lilopikir.com/experimental" />
       </Head>
 
       <MotionMain 
@@ -50,20 +52,20 @@ export default function Experimental() {
         
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
           Selamat datang di bagian fitur eksperimental kami. Di sini Anda akan menemukan alat interaktif yang melampaui artikel tradisional.
-          Jelajahi dashboard ekonomi untuk melihat tren terkini atau uji orientasi politik Anda.
+          Kunjungi common place untuk inspirasi dan wawasan, uji orientasi politik Anda, atau jelajahi dashboard ekonomi.
         </p>
         
-        {/* Tab Navigation */}
+        {/* Tab Navigation - Reordered */}
         <div className="flex flex-wrap gap-2 mb-8 border-b border-gray-200 dark:border-gray-700">
           <button
-            onClick={() => setActiveTab('economic-dashboard')}
+            onClick={() => setActiveTab('common-place')}
             className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
-              activeTab === 'economic-dashboard' 
+              activeTab === 'common-place' 
                 ? 'bg-red-600 text-white' 
                 : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
             }`}
           >
-            Dashboard Ekonomi
+            Common Place
           </button>
           <button
             onClick={() => setActiveTab('political-test')}
@@ -74,6 +76,16 @@ export default function Experimental() {
             }`}
           >
             Tes Orientasi Politik
+          </button>
+          <button
+            onClick={() => setActiveTab('economic-dashboard')}
+            className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
+              activeTab === 'economic-dashboard' 
+                ? 'bg-red-600 text-white' 
+                : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+            }`}
+          >
+            Dashboard Ekonomi
           </button>
         </div>
         
@@ -86,6 +98,7 @@ export default function Experimental() {
         >
           {activeTab === 'economic-dashboard' && <IndonesiaEconomicDashboard />}
           {activeTab === 'political-test' && <PoliticalAlignmentTest />}
+          {activeTab === 'common-place' && <CommonPlace />}
         </MotionDiv>
       </MotionMain>
     </>

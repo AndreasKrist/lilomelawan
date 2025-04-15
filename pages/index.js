@@ -76,12 +76,12 @@ useEffect(() => {
   return (
     <>
       <Head>
-        <title>Articles | LiloMelawan</title>
+        <title>Articles | LiloPikir</title>
         <meta name="description" content="Book reviews and thoughtful articles" />
-        <meta property="og:title" content="Articles | LiloMelawan" />
+        <meta property="og:title" content="Articles | LiloPikir" />
         <meta property="og:description" content="Book reviews and thoughtful articles" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lilomelawan.com" />
+        <meta property="og:url" content="https://lilopikir.com" />
       </Head>
 
       <MotionMain 
@@ -165,4 +165,3 @@ export async function getStaticProps() {
     props: { articles },
   };
 }
-

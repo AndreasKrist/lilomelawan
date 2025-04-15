@@ -6,12 +6,12 @@ export default function Donate() {
   return (
     <>
       <Head>
-        <title>Donate | LiloMelawan</title>
-        <meta name="description" content="Dukung LiloMelawan dengan donasi" />
-        <meta property="og:title" content="Donate | LiloMelawan" />
-        <meta property="og:description" content="Dukung LiloMelawan dengan donasi" />
+        <title>Donate | LiloPikir</title>
+        <meta name="description" content="Dukung LiloPikir dengan donasi" />
+        <meta property="og:title" content="Donate | LiloPikir" />
+        <meta property="og:description" content="Dukung LiloPikir dengan donasi" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lilomelawan.com/donate" />
+        <meta property="og:url" content="https://lilopikir.com/donate" />
       </Head>
 
       <motion.main 
@@ -49,12 +49,12 @@ export default function Donate() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h2 className="text-2xl font-bold mt-0">Donasi untuk LiloMelawan</h2>
+              <h2 className="text-2xl font-bold mt-0">Donasi untuk LiloPikir</h2>
               <p className="mb-6">
                 Donasi Anda akan digunakan untuk pengembangan konten, pemeliharaan situs, dan mendukung penulisan dari rakyat untuk rakyat
               </p>
               <a
-                href="https://saweria.co/lilomelawan"
+                href="https://saweria.co/lilopikir"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary bg-red-600 hover:bg-red-700 w-full mb-4"
@@ -86,7 +86,7 @@ export default function Donate() {
             <h3 className="!mt-0">Terima Kasih!</h3>
             <p className="mb-0">
               Dukungan Anda, dalam bentuk apapun, sangat kami hargai dan
-              memotivasi kami untuk terus menciptakan dan meningkatkan kualitas konten di LiloMelawan.
+              memotivasi kami untuk terus menciptakan dan meningkatkan kualitas konten di LiloPikir.
             </p>
           </div>
         </div>

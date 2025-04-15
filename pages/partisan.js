@@ -42,12 +42,12 @@ export default function Partisan({ articles }) {
   return (
     <>
       <Head>
-        <title>Partisan | LiloMelawan</title>
+        <title>Partisan | LiloPikir</title>
         <meta name="description" content="Guest submissions and partisan articles" />
-        <meta property="og:title" content="Partisan | LiloMelawan" />
+        <meta property="og:title" content="Partisan | LiloPikir" />
         <meta property="og:description" content="Guest submissions and partisan articles" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lilomelawan.com/partisan" />
+        <meta property="og:url" content="https://lilopikir.com/partisan" />
       </Head>
 
       <MotionMain 

@@ -1,6 +1,3 @@
-// This shows how to modify the Header.js component to add the Experimental link
-// You would update your existing Header.js file with these changes
-
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -35,14 +32,14 @@ export default function Header() {
     <header className={`sticky top-0 z-10 ${isScrolled ? 'shadow-sm' : ''} modern-header border-b border-gray-200 dark:border-gray-800 transition-shadow duration-200`}>
       <div className="container-narrow flex justify-between items-center h-16">
         <Link href="/" className="font-serif font-bold text-xl md:text-2xl text-red-600 dark:text-red-500 hover:text-red-700 dark:hover:text-red-400 transition">
-          LiloMelawan
+          LiloPikir
         </Link>
         
         <div className="flex items-center gap-1 md:gap-2">
           <nav className="hidden md:flex items-center">
             <NavLink href="/" exact>Articles</NavLink>
             <NavLink href="/partisan">Partisan</NavLink>
-            <NavLink href="/experimental">Experimental</NavLink> {/* New Link */}
+            <NavLink href="/experimental">Experimental</NavLink>
             <NavLink href="/about">About</NavLink>
             <NavLink href="/donate">Donate</NavLink>
           </nav>
@@ -81,7 +78,7 @@ export default function Header() {
             <nav className="flex flex-col space-y-1">
               <MobileNavLink href="/" exact>Articles</MobileNavLink>
               <MobileNavLink href="/partisan">Partisan</MobileNavLink>
-              <MobileNavLink href="/experimental">Experimental</MobileNavLink> {/* New Link */}
+              <MobileNavLink href="/experimental">Experimental</MobileNavLink>
               <MobileNavLink href="/about">About</MobileNavLink>
               <MobileNavLink href="/donate">Donate</MobileNavLink>
             </nav>

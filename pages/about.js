@@ -21,12 +21,12 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About | LiloMelawan</title>
-        <meta name="description" content="Tentang LiloMelawan" />
-        <meta property="og:title" content="About | LiloMelawan" />
-        <meta property="og:description" content="Tentang LiloMelawan" />
+        <title>About | LiloPikir</title>
+        <meta name="description" content="Tentang LiloPikir" />
+        <meta property="og:title" content="About | LiloPikir" />
+        <meta property="og:description" content="Tentang LiloPikir" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lilomelawan.com/about" />
+        <meta property="og:url" content="https://lilopikir.com/about" />
       </Head>
 
       <MotionMain 
@@ -54,7 +54,7 @@ export default function About() {
             >
             <Image 
                 src="/images/authors/profile.png" 
-                alt="LiloMelawan logo"
+                alt="LiloPikir logo"
                 width={160}
                 height={160}
                 className="rounded-full object-cover w-full h-full"
@@ -64,19 +64,19 @@ export default function About() {
 
             
             <div>
-              <h2 className="text-2xl font-bold !mt-0">LiloMelawan</h2>
+              <h2 className="text-2xl font-bold !mt-0">LiloPikir</h2>
               <p className="text-gray-600 dark:text-gray-400">
-                Si Kelinci Melawan
+                Si Kelinci Berpikir
               </p>
               <p>
-                LiloMelawan adalah simbol pencerahan dan perjuangan intelektual. Kami percaya bahwa membaca dan menulis adalah bentuk revolusi pikiran yang membebaskan.
+                LiloPikir adalah simbol pencerahan dan perjuangan intelektual. Kami percaya bahwa membaca dan menulis adalah bentuk revolusi pikiran yang membebaskan.
               </p>
             </div>
           </div>
           
           <h2>Tentang Situs Ini</h2>
           <p>
-            LiloMelawan didirikan dengan tujuan menyediakan ruang untuk informasi mendalam tentang literatur dan pemikiran kritis. Kami tidak hanya mengulas buku, tetapi juga menggali ide-ide penting dari karya-karya tersebut untuk diaplikasikan dalam kehidupan sehari-hari.
+            LiloPikir didirikan dengan tujuan menyediakan ruang untuk informasi mendalam tentang literatur dan pemikiran kritis. Kami tidak hanya mengulas buku, tetapi juga menggali ide-ide penting dari karya-karya tersebut untuk diaplikasikan dalam kehidupan sehari-hari.
           </p>
           <p>
             Kami percaya bahwa pemikiran kritis dan terbuka adalah kunci untuk memajukan masyarakat. Melalui situs ini, kami berharap dapat menginspirasi pembaca untuk melihat dunia dengan cara yang lebih mendalam dan reflektif.
@@ -85,7 +85,7 @@ export default function About() {
           <h2>Kirim Artikel</h2>
           <p>
             Kami menerima kontribusi artikel dari para pembaca. Jika Anda ingin artikelnya dipublikasikan di bagian Partisan, silakan kirim ke email{' '}
-            <a href="mailto:lilocs2004@gmail.com" className="text-red-600 dark:text-red-400 hover:underline">lilocs2004@gmail.com</a>.
+            <a href="mailto:lilopikir@gmail.com" className="text-red-600 dark:text-red-400 hover:underline">lilopikir@gmail.com</a>.
           </p>
           <p>
             Artikel harus bersifat orisinal, mendalam, dan sesuai dengan tema kami yang berlandaskan pemikiran kritis maupun radikal.
@@ -97,9 +97,14 @@ export default function About() {
               Untuk pertanyaan, saran, atau kolaborasi, silakan hubungi kami melalui:
             </p>
             <div className="flex flex-wrap gap-4 mt-4">
-              <a href="mailto:lilocs2004@gmail.com" className="btn-primary bg-red-600 hover:bg-red-700 focus:ring-red-500">Email</a>
-              <a href="https://x.com/cs_Lilo" className="btn-secondary">X</a>
-              {/* <a href="https://instagram.com/lilomelawan" className="btn-secondary">Instagram</a> */}
+              <a href="mailto:lilopikir@gmail.com" className="btn-primary bg-red-600 hover:bg-red-700 focus:ring-red-500">Email</a>
+              <a href="https://x.com/cs_Lilo" className="btn-secondary flex items-center gap-1">
+                <svg className="h-4 w-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+                <span>Lilo  </span>
+              </a>
+              {/* <a href="https://instagram.com/lilopikir" className="btn-secondary">Instagram</a> */}
             </div>
           </div>
         </div>
