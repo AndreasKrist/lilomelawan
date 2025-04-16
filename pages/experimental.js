@@ -77,7 +77,7 @@ export default function Experimental() {
           >
             Tes Orientasi Politik
           </button>
-          <button
+          {/* <button
             onClick={() => setActiveTab('economic-dashboard')}
             className={`px-4 py-2 font-medium rounded-t-lg transition flex-1 sm:flex-none ${
               activeTab === 'economic-dashboard' 
@@ -86,7 +86,7 @@ export default function Experimental() {
             }`}
           >
             Dashboard Ekonomi
-          </button>
+          </button> */}
         </div>
         
         {/* Tab Content */}
