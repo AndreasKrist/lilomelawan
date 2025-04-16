@@ -31,9 +31,8 @@ export default function Donate() {
         
         <div className="prose dark:prose-dark lg:prose-lg max-w-none">
           <p className="text-xl">
-            Hi Partisan!! Jika kalian merasa artikel ini bermanfaat, ayo dukung situs ini. 
-            Kontribusi para Partisan membantu kami terus menciptakan konten berkualitas
-            dan menjaga situs ini bebas dari iklan.
+            Hi Partisan!! Kalau merasa artikel ini bermanfaat, kalian bisa dukung situs ini loh. 
+            Kontribusi para Partisan membantu kami menciptakan konten berkualitas dan tanpa iklan.
           </p>
           
           <motion.div 
@@ -77,15 +76,15 @@ export default function Donate() {
           
           <h2>Cara Lain untuk Mendukung Kami</h2>
           <ul>
-            <li>Bagikan artikel yang Anda anggap bermanfaat kepada orang lain</li>
-            <li>Ikuti kami di media sosial dan bantu kembangkan komunitas kami</li>
-            <li>Kirimkan artikel kontribusi untuk bagian Partisan</li>
+            <li>Bagikan artikel yang kalian rasa bermanfaat untuk orang lain</li>
+            <li>Ikuti kami di media sosial dan bantu besarkan komunitas kami</li>
+            <li>Kirimkan artikel-mu untuk kontribusi di bagian Partisan</li>
           </ul>
           
           <div className="bg-red-50 dark:bg-red-900/10 p-6 rounded-lg mt-10 border border-red-100 dark:border-red-900/20">
             <h3 className="!mt-0">Terima Kasih!</h3>
             <p className="mb-0">
-              Dukungan Anda, dalam bentuk apapun, sangat kami hargai dan
+              Dukungan kalian, dalam bentuk apapun, sangat berarti dan
               memotivasi kami untuk terus menciptakan dan meningkatkan kualitas konten di LiloPikir.
             </p>
           </div>

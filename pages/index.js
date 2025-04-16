@@ -96,7 +96,7 @@ useEffect(() => {
           transition={{ duration: 0.3 }}
           className="text-4xl md:text-5xl font-bold mb-12 font-serif text-gray-900 dark:text-white"
         >
-          Take a minute and contemplate !
+          Take a sit and contemplate 
         </MotionH1>
         
         <div className="mb-8">

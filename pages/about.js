@@ -66,29 +66,30 @@ export default function About() {
             <div>
               <h2 className="text-2xl font-bold !mt-0">LiloPikir</h2>
               <p className="text-gray-600 dark:text-gray-400">
-                Si Kelinci Berpikir
+                Si Kelinci Tukang Mikir
               </p>
               <p>
-                LiloPikir adalah simbol pencerahan dan perjuangan intelektual. Kami percaya bahwa membaca dan menulis adalah bentuk revolusi pikiran yang membebaskan.
+                LiloPikir merupakan simbol pencerahan dan perjuangan intelektual. Kami meyakini bahwa membaca dan menulis merupakan senjata pemikiran untuk menghancurkan belenggu ketidakacuhan.
               </p>
             </div>
           </div>
           
           <h2>Tentang Situs Ini</h2>
           <p>
-            LiloPikir didirikan dengan tujuan menyediakan ruang untuk informasi mendalam tentang literatur dan pemikiran kritis. Kami tidak hanya mengulas buku, tetapi juga menggali ide-ide penting dari karya-karya tersebut untuk diaplikasikan dalam kehidupan sehari-hari.
+            LiloPikir didirikan dengan tujuan menyediakan ruang untuk informasi mendalam tentang literatur serta pemikiran kritis dan radikal. Kami tidak hanya mengulas buku, tetapi juga menggali ide-ide penting dari karya-karya tersebut untuk dihikmati dalam kehidupan sehari-hari.
           </p>
           <p>
-            Kami percaya bahwa pemikiran kritis dan terbuka adalah kunci untuk memajukan masyarakat. Melalui situs ini, kami berharap dapat menginspirasi pembaca untuk melihat dunia dengan cara yang lebih mendalam dan reflektif.
+            Kami percaya bahwa pemikiran kritis dan terbuka merupakan kunci untuk memajukan pikiran [masyarakat]. Melalui situs ini, kami berharap dapat menginspirasi pembaca untuk melihat dunia dengan cara yang lebih mendalam dan reflektif.
+            Sehingga menghasilkan pribadi-pribadi yang ber-empati dan bijaksana.
           </p>
           
           <h2>Kirim Artikel</h2>
           <p>
             Kami menerima kontribusi artikel dari para pembaca. Jika Anda ingin artikelnya dipublikasikan di bagian Partisan, silakan kirim ke email{' '}
-            <a href="mailto:lilopikir@gmail.com" className="text-red-600 dark:text-red-400 hover:underline">lilopikir@gmail.com</a>.
+            <a href="mailto:lilocs2004@gmail.com" className="text-red-600 dark:text-red-400 hover:underline">lilopikir@gmail.com</a>.
           </p>
           <p>
-            Artikel harus bersifat orisinal, mendalam, dan sesuai dengan tema kami yang berlandaskan pemikiran kritis maupun radikal.
+            Artikel harus bersifat original, merangsang dan sesuai dengan tema kami yang berlandaskan pemikiran kritis, maupun imaginatif.
           </p>
           
           <div className="bg-red-50 dark:bg-red-900/10 p-6 rounded-lg mt-10 border border-red-100 dark:border-red-900/20">
@@ -97,7 +98,7 @@ export default function About() {
               Untuk pertanyaan, saran, atau kolaborasi, silakan hubungi kami melalui:
             </p>
             <div className="flex flex-wrap gap-4 mt-4">
-              <a href="mailto:lilopikir@gmail.com" className="btn-primary bg-red-600 hover:bg-red-700 focus:ring-red-500">Email</a>
+              <a href="mailto:lilocs2004@gmail.com" className="btn-primary bg-red-600 hover:bg-red-700 focus:ring-red-500">Email</a>
               <a href="https://x.com/cs_Lilo" className="btn-secondary flex items-center gap-1">
                 <svg className="h-4 w-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />

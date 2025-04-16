@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignmentTest';
+import PoliticalAlignmentTest from '../components/experimental/PoliticalAlignment';
 import IndonesiaEconomicDashboard from '../components/dashboard/IndonesiaEconomicDashboard';
 import CommonPlace from '../components/experimental/CommonPlace';
 
@@ -51,8 +51,8 @@ export default function Experimental() {
         </MotionH1>
         
         <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-          Selamat datang di bagian fitur eksperimental kami. Di sini Anda akan menemukan alat interaktif yang melampaui artikel tradisional.
-          Kunjungi common place untuk inspirasi dan wawasan, uji orientasi politik Anda, atau jelajahi dashboard ekonomi.
+          Selamat datang di bagian fitur eksperimental kami. Di sini kalian dapat memanfaatkan fitur interaktif kami.
+          Kunjungi common place untuk inspirasi dan kebijaksanaan. Kalian juga dapat menguji orientasi politik pribadi.
         </p>
         
         {/* Tab Navigation - Reordered */}

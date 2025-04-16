@@ -509,7 +509,8 @@ const CommonPlace = () => {
     <div className="common-place">
       <h2 className="text-2xl font-bold mb-2 font-serif">Common Place</h2>
       <p className="mb-6 text-gray-600 dark:text-gray-300">
-        Koleksi kutipan, kebijaksanaan, dan pemikiran yang memberi inspirasi atau refleksi. Taman ide untuk dikunjungi kapan saja Anda membutuhkan wawasan atau perspektif segar.
+        Koleksi kutipan, kebijaksanaan, dan pemikiran yang memberi inspirasi atau refleksi. Tempat yang kalian dapat kunjungi untuk berefleksi hingga memperdebatkan suatu pernyataan. Common place
+        lazim digunakan dari Zaman Aristoteles, Renaisans; hingga saat ini untuk mengembangkan kebijaksanaan dan intelektual seseorang. 
       </p>
       
       {/* Search and Filter */}

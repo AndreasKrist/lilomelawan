@@ -65,7 +65,7 @@ export default function Partisan({ articles }) {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 font-serif">Partisan</h1>
           <p className="text-xl text-gray-600 dark:text-gray-300">
             {/* Guest submissions and community-contributed articles */}
-            Dari Rakyat Untuk Rakyat
+            Dari Rakyat Untuk Rakyat. Merupakan artikel kiriman Partisan
           </p>
         </MotionDiv>
         
