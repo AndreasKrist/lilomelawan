@@ -29,7 +29,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`sticky top-0 z-10 ${isScrolled ? 'shadow-sm' : ''} modern-header border-b border-gray-200 dark:border-gray-800 transition-shadow duration-200`}>
+    <header className={`sticky top-0 z-10 ${isScrolled ? 'shadow-sm' : ''} modern-header border-b border-gray-200 dark:border-gray-800 transition-shadow duration-200 relative`}>
       <div className="container-narrow flex justify-between items-center h-16">
         <Link href="/" className="font-serif font-bold text-xl md:text-2xl text-red-600 dark:text-red-500 hover:text-red-700 dark:hover:text-red-400 transition">
           LiloPikir

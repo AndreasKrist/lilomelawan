@@ -6,6 +6,7 @@ import rehypePrism from 'rehype-prism-plus';
 import remarkGfm from 'remark-gfm';
 import ArticleHeader from '../../components/article/ArticleHeader';
 import ArticleContent from '../../components/article/ArticleContent';
+import ReadingProgressBar from '../../components/ui/ReadingProgressBar';
 import { getArticleBySlug, getAllArticles } from '../../lib/utils/mdx';
 
 export default function Article({ article, content }) {
@@ -20,6 +21,9 @@ export default function Article({ article, content }) {
         <meta property="og:url" content={`https://lilomelawan.com/articles/${article.slug}`} />
         {article.coverImage && <meta property="og:image" content={article.coverImage} />}
       </Head>
+
+      {/* Add the Reading Progress Bar */}
+      <ReadingProgressBar />
 
       {/* Changed from container-narrow to article-container for more whitespace */}
       <article className="article-container py-10 md:py-16">

@@ -85,8 +85,8 @@ export default function About() {
           
           <h2>Kirim Artikel</h2>
           <p>
-            Kami menerima kontribusi artikel dari para pembaca. Jika Anda ingin artikelnya dipublikasikan di bagian Partisan, silakan kirim ke email{' '}
-            <a href="mailto:lilocs2004@gmail.com" className="text-red-600 dark:text-red-400 hover:underline">lilopikir@gmail.com</a>.
+            Kami menerima kontribusi artikel dari para pembaca. Jika Anda ingin artikelnya dipublikasikan di bagian Partisan, silakan kirim ke email :{' '}
+            <a href="mailto:lilocs2004@gmail.com" className="text-red-600 dark:text-red-400 hover:underline">lilocs2004@gmail.com</a>.
           </p>
           <p>
             Artikel harus bersifat original, merangsang dan sesuai dengan tema kami yang berlandaskan pemikiran kritis, maupun imaginatif.
