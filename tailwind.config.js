@@ -9,7 +9,21 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        serif: ['Merriweather', 'Georgia', 'serif'],
+        // Option 1: Cinzel (Roman/Medieval capitals - best for headers)
+        serif: ['Cinzel', 'Georgia', 'serif'],
+        
+        // Alternative options (uncomment the one you prefer):
+        // Option 2: Uncial Antiqua (Medieval manuscript style)
+        // serif: ['Uncial Antiqua', 'Georgia', 'serif'],
+        
+        // Option 3: IM Fell DW Pica (Historical typeface)
+        // serif: ['IM Fell DW Pica', 'Georgia', 'serif'],
+        
+        // Option 4: MedievalSharp (Direct medieval theme)
+        // serif: ['MedievalSharp', 'Georgia', 'serif'],
+        
+        // Option 5: Almendra (Medieval manuscript)
+        // serif: ['Almendra', 'Georgia', 'serif'],
       },
       typography: (theme) => ({
         DEFAULT: {
