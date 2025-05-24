@@ -86,26 +86,6 @@ export default function Footer() {
         
         <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-800 text-center text-sm text-gray-500 dark:text-gray-400">
           <p>© {currentYear} LiloPikir. All rights reserved.</p>
-          <p className="mt-2">
-            Built with {' '}
-            <a 
-              href="https://nextjs.org" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:text-red-600 dark:hover:text-red-400 transition"
-            >
-              Next.js
-            </a> {' '}
-            and {' '}
-            <a 
-              href="https://tailwindcss.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="hover:text-red-600 dark:hover:text-red-400 transition"
-            >
-              Tailwind CSS
-            </a>
-          </p>
         </div>
       </div>
     </footer>
