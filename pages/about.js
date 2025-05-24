@@ -76,11 +76,10 @@ export default function About() {
           
           <h2>Tentang Situs Ini</h2>
           <p>
-            LiloPikir didirikan dengan tujuan menyediakan ruang untuk informasi mendalam tentang literatur serta pemikiran kritis dan radikal. Kami tidak hanya mengulas buku, tetapi juga menggali ide-ide penting dari karya-karya tersebut untuk dihikmati dalam kehidupan sehari-hari.
+            LiloPikir didirikan dengan tujuan untuk meningkatkan minat berpikir. Berfikir berarti memikirkan segala hal dari yang besar hingga hal paling kecil dalam kehidupan. Berpikir bukanlah sesuatu yang sia-sia namun fondasi dalam kehidupan.
           </p>
           <p>
-            Kami percaya bahwa pemikiran kritis dan terbuka merupakan kunci untuk memajukan pikiran [masyarakat]. Melalui situs ini, kami berharap dapat menginspirasi pembaca untuk melihat dunia dengan cara yang lebih mendalam dan reflektif.
-            Sehingga menghasilkan pribadi-pribadi yang ber-empati dan bijaksana.
+            Kami percaya bahwa kegiatan berpikir akan merangsang akal dan budi kita untuk menjadi manusia yang bijaksana, memperluas empati dan hati nurani, serta mendatangkan berbagai kesempatan yang tidak pernah terduga.  Berpikir bukanlah nihil aksi, namun setiap aksi terjadi karena pikiran.
           </p>
           
           <h2>Kirim Artikel</h2>
