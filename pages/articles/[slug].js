@@ -13,9 +13,9 @@ export default function Article({ article, content }) {
   return (
     <>
       <Head>
-        <title>{article.title} | LiloMelawan</title>
+        <title>{article.title} | LiloPikir</title>
         <meta name="description" content={article.excerpt} />
-        <meta property="og:title" content={`${article.title} | LiloMelawan`} />
+        <meta property="og:title" content={`${article.title} | LiloPikir`} />
         <meta property="og:description" content={article.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={`https://lilomelawan.com/articles/${article.slug}`} />

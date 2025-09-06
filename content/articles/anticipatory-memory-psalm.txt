@@ -3,7 +3,7 @@ title: 'Anticipatory Memory: A Phenomenological Revolution in Understanding Hope
 date: '2025-05-20'
 excerpt: 'A radical reexamination of hope as a form of memory that accesses future states, challenging our understanding of consciousness, time, and human possibility.'
 coverImage: '/images/articles/psalm.webp'
-categories: ['Philosophy', 'Opinion']
+categories: ['Philosophy']
 ---
 
 ## The Scandal of Philosophy's Failure
