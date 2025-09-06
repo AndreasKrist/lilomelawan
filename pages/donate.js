@@ -53,12 +53,12 @@ export default function Donate() {
                 Donasi Anda akan digunakan untuk pengembangan konten, pemeliharaan situs, dan mendukung penulisan dari rakyat untuk rakyat
               </p>
               <a
-                href="https://saweria.co/lilopikir"
+                href="#"
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary bg-red-600 hover:bg-red-700 w-full mb-4"
               >
-                Donasi Sekarang
+                LAGI GAK PERLU DONASI SEKARANG
               </a>
               <a
                 href="https://docs.google.com/spreadsheets/d/1rmOik-YNzAfxuGl5r4spPtqiDtgCp3lpRgDBzkB9hD8/edit?usp=sharing"

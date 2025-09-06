@@ -158,7 +158,8 @@ export async function getStaticProps() {
     'excerpt',
     'coverImage',
     'readingTime',
-    'categories'
+    'categories',
+    'pdfPath'
   ]);
 
   return {

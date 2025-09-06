@@ -14,11 +14,14 @@ export default function ArticleCard({ article }) {
     return `${truncated}...`;
   };
 
+  // Determine the link URL - use PDF path if available, otherwise use article page
+  const linkUrl = article.pdfPath || `/articles/${article.slug}`;
+
   return (
     <article className="modern-card h-full flex flex-col">
       {article.coverImage && (
         <div className="w-full h-48 relative overflow-hidden rounded-t-xl">
-          <Link href={`/articles/${article.slug}`} className="block w-full h-full">
+          <Link href={linkUrl} className="block w-full h-full" target={article.pdfPath ? "_blank" : "_self"}>
             <Image
               src={article.coverImage}
               alt={`Cover image for ${article.title}`}
@@ -41,7 +44,7 @@ export default function ArticleCard({ article }) {
           </div>
         )}
         
-        <Link href={`/articles/${article.slug}`} className="block group">
+        <Link href={linkUrl} className="block group" target={article.pdfPath ? "_blank" : "_self"}>
           <h2 className="text-lg font-bold font-serif mb-1 line-clamp-2 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors">
             {article.title}
           </h2>
@@ -63,10 +66,11 @@ export default function ArticleCard({ article }) {
         </p>
         
         <Link 
-          href={`/articles/${article.slug}`} 
+          href={linkUrl}
+          target={article.pdfPath ? "_blank" : "_self"}
           className="inline-flex items-center text-red-600 dark:text-red-400 text-sm font-medium transition hover:text-red-700 dark:hover:text-red-300 mt-auto"
         >
-          Read More
+          {article.pdfPath ? 'Read PDF' : 'Read More'}
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
           </svg>
