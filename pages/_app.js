@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'next-themes';
+import { Analytics } from '@vercel/analytics/next';
 import Layout from '../components/layout/Layout';
 import '../styles/globals.css';
 
@@ -8,6 +9,7 @@ function MyApp({ Component, pageProps }) {
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      <Analytics />
     </ThemeProvider>
   );
 }
